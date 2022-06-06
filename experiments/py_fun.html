@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PY Functions</title>
+    <link rel="stylesheet" href="\css/style.css">
+    <link rel="icon" type="image/x-icon" href="code.ico">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/styles/tokyo-night-dark.min.css">
+</head>
+
+<body>
+    <div class="navbar1">
+        <img src="code.ico" class="logo">
+        <nav>
+            <ul>
+                <li><a href="\index.html" taget="_blank">Home</a></li>
+                <li><a href="experiments.html" target="_blank">Experiments</a>
+                </li>
+                <li><a href="\learnings.html" target="_blank">My Learnings</a></li>
+
+                <li><a href="https://github.com/officialxnitin/officialxnitin.github.io" target="_blank"> <img
+                            src="\assets/github-logo.png" width="60px" height="55px" class="git"></a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <hr><br><br>
+    <h3 style="color:white;text-align:center">Write the Python functions for linear search, binary search, selection
+        sort, bubble Sort, Insertion Sort and converting fibonacci to a linear algorithm</h3><br><br>
+    <hr><br><br>
+    <h1 style="color:aliceblue;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;Linear search</h1>
+    <div>
+        <pre>
+            <code class="language-python" style="font-size:larger">
+       1. def linearsearch(arr, x):
+       2. for i in range(len(arr)):
+       3.    if arr[i] == x:
+       4.        return i
+       5. return -1
+       6. arr = ['t','u','t','o','r','i','a','l']
+       7. x = 'a'
+       8. print("element found at index "+str(linearsearch(arr,x)))
+            </code>
+        </pre>
+    </div>
+    <br>
+    <h1 style="color:aliceblue;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;Binary search</h1>
+    <div>
+        <pre>
+            <code class="language-python" style="font-size:larger">
+       1. def binarySearch(array, x, low, high):
+       2. while low <= high:
+       3.    mid = low + (high - low)//2
+       4.    if array[mid] == x:
+       5.        return mid
+       6.    elif array[mid] < x:
+       7.        low = mid + 1
+       8.    else:
+       9.        high = mid - 1
+       10. return -1
+       11. array = [3, 4, 5, 6, 7, 8, 9]
+       12. x = 4
+       13. result = binarySearch(array, x, 0, len(array)-1)
+       14. if result != -1:
+       15. print("Element is present at index " + str(result))
+       16. else:
+       17. print("Not found")
+            </code>
+        </pre>
+    </div>
+    <br>
+    <h1 style="color:aliceblue;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;Selection sort</h1>
+    <div>
+        <pre>
+            <code class="language-python" style="font-size:larger">
+       1. def selectionSort( itemsList ):
+       2. n = len( itemsList )
+       3. for i in range( n - 1 ):
+       4.    minValueIndex = i
+       5.    for j in range( i + 1, n ):
+       6.        if itemsList[j] < itemsList[minValueIndex] :
+       7.            minValueIndex = j
+       8.    if minValueIndex != i :
+       9.        temp = itemsList[i]
+       10.        itemsList[i] = itemsList[minValueIndex]
+       11.        itemsList[minValueIndex] = temp
+       12. return itemsList
+       13. el = [21,6,9,33,3]
+       14. print(selectionSort(el))
+            </code>
+        </pre>
+    </div>
+    <br>
+    <h1 style="color:aliceblue;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;Bubble sort</h1>
+    <div>
+        <pre>
+            <code class="language-python" style="font-size:larger">
+       1. def bubbleSort( theSeq ):
+       2. n = len( theSeq )
+       3. for i in range( n - 1 ) :
+       4.    flag = 0
+       5.    for j in range(n - 1) :
+       6.        if theSeq[j] > theSeq[j + 1] :
+       7.            tmp = theSeq[j]
+       8.            theSeq[j] = theSeq[j + 1]
+       9.            theSeq[j + 1] = tmp
+       10.            flag = 1
+       11.    if flag == 0:
+       12.        break
+       13. return theSeq
+       14. el = [21,6,9,33,3]
+       15. result = bubbleSort(el)
+       16. print (result)
+            </code>
+        </pre>
+    </div>
+    <br>
+    <h1 style="color:aliceblue;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;Insertion sort</h1>
+    <div>
+        <pre>
+            <code class="language-python" style="font-size:larger">
+       1. def insertionSort(arr):
+       2. for i in range(1, len(arr)):
+       3.    key = arr[i]
+       4.    j = i-1
+       5.    while j >=0 and key < arr[j] :
+       6.        arr[j+1] = arr[j]
+       7.        j -= 1
+       8.    arr[j+1] = key
+       9. arr = ['h','e','l','l','o']
+       10. insertionSort(arr)
+       11. print ("The sorted array is:")
+       12. for i in range(len(arr)):
+       13. print (arr[i])
+            </code>
+        </pre>
+    </div>
+    <br>
+    <h1 style="color:aliceblue;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;Fibonacci algorithm</h1>
+    <div>
+        <pre>
+            <code class="language-python" style="font-size:larger">
+       1. def Fibonacci(n):
+       2. if n<= 0:
+       3.    print("Incorrect input")
+       4. elif n == 1:
+       5.    return 0
+       6. elif n == 2:
+       7.    return 1
+       8. else:
+       9.    return Fibonacci(n-1)+Fibonacci(n-2)
+       10. print(Fibonacci(10))
+            </code>
+        </pre>
+    </div>
+</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+</html>

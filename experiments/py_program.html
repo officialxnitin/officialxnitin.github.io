@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PY Program</title>
+    <link rel="stylesheet" href="\css/style.css">
+    <link rel="icon" type="image/x-icon" href="code.ico">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/styles/tokyo-night-dark.min.css">
+</head>
+
+<body>
+    <div class="navbar1">
+        <img src="code.ico" class="logo">
+        <nav>
+            <ul>
+                <li><a href="\index.html" taget="_blank">Home</a></li>
+                <li><a href="experiments.html" target="_blank">Experiments</a>
+                </li>
+                <li><a href="\learnings.html" target="_blank">My Learnings</a></li>
+
+                <li><a href="https://github.com/officialxnitin/officialxnitin.github.io" target="_blank"> <img
+                            src="\assets/github-logo.png" width="60px" height="55px" class="git"></a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <hr><br><br>
+    <h2 style="color:white;text-align:center">Write a program in Python using lists, dictionaries, control statements,
+        strings and text files</h2><br><br>
+    <hr><br><br>
+    <h1 style="color:aliceblue;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;Lists and dictionaries</h1>
+    <div>
+        <pre>
+            <code class="language-python" style="font-size:larger">
+       1. list = ["Hey", "buddy"]
+       2. print(list)
+
+       3. Dict = {1: 'Hey', 2: 'buddy'}
+       4. print(Dict)
+            </code>
+        </pre>
+    </div>
+    <br>
+    <h1 style="color:aliceblue;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;Continue</h1>
+    <div>
+        <pre>
+            <code class="language-python" style="font-size:larger">
+       1. for char in 'Python':
+       2.     if (char == 'y'):
+       3.        continue
+       4.     print("Current character: ", char)
+            </code>
+        </pre>
+    </div>
+    <br>
+    <h1 style="color:aliceblue;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;Break</h1>
+    <div>
+        <pre>
+            <code class="language-python" style="font-size:larger">
+       1. for char in 'Python':
+       2. if (char == 'h'):
+       3.    break
+       4. print("Current character: ", char)
+            </code>
+        </pre>
+    </div>
+    <br>
+    <h1 style="color:aliceblue;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;Pass</h1>
+    <div>
+        <pre>
+            <code class="language-python" style="font-size:larger">
+       1. for char in 'Python':
+       2. if (char == 'h'):
+       3.    pass
+       4. print("Current character: ", char)
+            </code>
+        </pre>
+    </div>
+    <br>
+    <h1 style="color:aliceblue;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;String</h1>
+    <div>
+        <pre>
+            <code class="language-python" style="font-size:larger">
+       1. sentence = "I Love Snakes"
+       2. print(sentence.capitalize())
+       3. print(sentence.lower())
+            </code>
+        </pre>
+    </div>
+    <br>
+    <h1 style="color:aliceblue;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;Text files</h1>
+    <div>
+        <pre>
+            <code class="language-python" style="font-size:larger">
+       1. f = open("iwt.txt", "a")
+       2. f.write("Content found!")
+       3. f.close()
+       4. f = open("iwt.txt", "r")
+       5. print(f.read())
+            </code>
+        </pre>
+    </div>
+</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+</html>
