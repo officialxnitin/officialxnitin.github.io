@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <link rel="stylesheet" href="\css/style.css">
+    <link rel="icon" type="image/x-icon" href="code.ico">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/styles/tokyo-night-dark.min.css">
+</head>
+
+<body>
+    <div class="navbar1">
+        <img src="code.ico" class="logo">
+        <nav>
+            <ul>
+                <li><a href="\index.html" taget="_blank">Home</a></li>
+                <li><a href="experiments.html" target="_blank">Experiments</a>
+                </li>
+                <li><a href="\learnings.html" target="_blank">My Learnings</a></li>
+
+                <li><a href="https://github.com/officialxnitin/officialxnitin.github.io" target="_blank"> <img
+                            src="\assets/github-logo.png" width="60px" height="55px" class="git"></a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <hr><br><br>
+    <h2 style="color:white;text-align:center">Loops in Javascript</h2><br><br>
+    <hr><br><br>
+    <h1 style="color:aliceblue;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;js</h1>
+    <div>
+        <pre>
+            <code class="language-js" style="font-size:larger">
+       1.  // for loop
+       2.  const students = ["yash", "ajay", "dev"]
+       3.  let output = ""
+       4.  for (let i = 0; i < students.length; i++) {
+       5.     output += students[i] + ' '
+       6.  }
+       7.  console.log('For Loop Output' + '\n' + output)
+       8.  // for/in loop
+       9.  output = ""
+       10.  for (let student in students) {
+       11.     output += students[student] + " ";
+       12.  }
+       13.  console.log('for/in Loop Output' + '\n' + output)
+       14.  // while loop
+       15.  output = ""
+       16.  let i = 0
+       17.  while (i < students.length) {
+       18.     output += students[i] + " ";
+       19.     i++;
+       20.  }
+       21.  console.log('While Loop Output' + '\n' + output)
+       22.  // do loop
+       23.  output = ""
+       24.  i = 0
+       25.  do {
+       26.     output += students[i] + " ";
+       27.     i++;
+       28.  }
+       29.  while (i < students.length);
+       30.  console.log('Do While Loop Output' + '\n' + output)
+            </code>
+        </pre>
+    </div>
+</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+</html>
