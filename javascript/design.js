@@ -1,14 +1,14 @@
 const change_bg = () => {
-    document.getElementById('main').style.backgroundColor = "#2d2d2d"
+    document.getElementById('mod').style.backgroundColor = "#FF0000"
 }
 const change_font_size = () => {
-    document.getElementById('main').style.fontSize = "30px"
+    document.getElementById('modtxt').style.fontSize = "80px"
 }
 const change_font_color = () => {
-    document.querySelectorAll("button").forEach(button => button.style.color = "#b5e853");
+    document.querySelectorAll("modtxt").style.color = "#b5e853");
 }
 const change_align_center = () => {
-    document.getElementById('main').style.textAlign = "center"
+    document.getElementById('modtxt').style.textAlign = "center"
 }
 const remove_underline = () => {
     document.querySelector('a').style.setProperty('border-bottom', 'none', 'important');
