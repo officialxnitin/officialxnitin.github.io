@@ -1,15 +1,15 @@
 const change_bg = () => {
-    document.getElementById('mod').style.backgroundColor = "#FF0000"
+    document.getElementById('mod').style.backgroundColor = "#000000";
 }
 const change_font_size = () => {
-    document.getElementById('modtxt').style.fontSize = "80px"
+    document.getElementById('modtxt').style.fontSize = "20px"
 }
 const change_font_color = () => {
-    document.querySelectorAll("modtxt").style.color = "#b5e853");
+    document.getElementById('modtxt').style.color = "#00FFFF";
 }
 const change_align_center = () => {
     document.getElementById('modtxt').style.textAlign = "center"
 }
 const remove_underline = () => {
-    document.querySelector('a').style.setProperty('border-bottom', 'none', 'important');
+    document.getElementById('hyp').style['text-decoration'] = 'none'
 }

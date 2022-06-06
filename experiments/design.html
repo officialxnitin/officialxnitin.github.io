@@ -6,6 +6,20 @@
     <title>Design</title>
     <link rel="stylesheet" href="\css/tickertape.css">
     <link rel="icon" type="image/x-icon" href="code.ico">
+    <style>
+        .desbtn {
+            border-radius: 12px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 15px;
+            box-shadow: 0px 10px 50px #18edb8;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #090a0f;
+            color: aqua;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,16 +40,18 @@
     <hr><br><br>
     <h1 style="color:white;text-align:center;font-family:'Times New Roman', Times, serif">Design buttons</h1><br><br>
     <section style="text-align:center">
-        <button type="button" class="subtn" onclick="change_bg()">Change Background Color</button>
-        <button type="button" class="subtn" onclick="change_font_size()">Change Font Size</button>
-        <button type="button" class="subtn" onclick="change_font_color()">Change Color</button>
-        <button type="button" class="subtn" onclick="change_align_center()">Align Text Center</button>
-        <a onclick="remove_underline()" style="color:white">Remove Underlines</a>
+        <button type="button" class="desbtn" onclick="change_bg()">Change Background Color</button>
+        &nbsp;&nbsp;&nbsp;<button type="button" class="desbtn" onclick="change_font_size()">Change Font Size</button>
+        &nbsp;&nbsp;&nbsp;<button type="button" class="desbtn" onclick="change_font_color()">Change Color</button>
+        &nbsp;&nbsp;&nbsp;<button type="button" class="desbtn" onclick="change_align_center()">Align Text
+            Center</button>
+        &nbsp;&nbsp;&nbsp;<button type="button" class="desbtn" onclick="remove_underline()">Remove underline</button>
     </section><br>
     <br>
     <hr><br>
     <div id="mod" style="color:white;font-family:'Times New Roman', Times, serif">
-        <h2 style="text-align:center">Content</h2><br><br>
+        <br>
+        <h2 style="text-align:center"><a href="#" id="hyp" class="hyc">Content</a></h2><br><br>
         <ul id="modtxt">
             <li>1. &nbsp;&nbsp;CSS stands for Cascading Style Sheets.</li>
             <br>
@@ -46,7 +62,7 @@
             </li>
             <br>
             <li>4. &nbsp;&nbsp;External stylesheets are stored in CSS files.</li>
-        </ul>
+        </ul><br><br>
     </div>
 </body>
 
